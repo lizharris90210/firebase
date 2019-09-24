@@ -3,12 +3,36 @@ body {
 }
 h1 {
   font-size: 75px !important;
+  text-align: center;
 }
 #heading,
 h3 {
   text-align: center;
   color: black;
   background: #7a7a7a;
+  margin-bottom: 30px;
+}
+h2{
+    text-align: center;
+    color: black;
+    background: #7a7a7a;
+    padding-bottom: 15px;
+}
+.timeDate {
+  float: left;
+  text-align: left;
+  vertical-align: middle;
+  color: black;
+  max-height: 200px;
+  max-width: 200px;
+  border: solid black 4px;
+  padding: 20px;
+}
+#rightImage {
+  max-height: 200px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 #scheduleTable,
 #addTrainForm {
@@ -31,6 +55,7 @@ p {
   margin: 0 0 2px 0 !important;
 }
 .table {
+  text-align: left;
   background: #32383e !important;
   color: white;
 }
@@ -38,8 +63,9 @@ button {
   margin: 0 !important;
 }
 #trainBW {
-  width: 400px;
+  width: 492px;
   position: absolute;
-  right: 130px;
-  bottom: -270px;
+  z-index: 1;
+  right: 97px;
+  bottom: -324px;
 }
