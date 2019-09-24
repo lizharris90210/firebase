@@ -1,0 +1,45 @@
+body {
+  font-family: "Vollkorn SC", serif !important;
+}
+h1 {
+  font-size: 75px !important;
+}
+#heading,
+h3 {
+  text-align: center;
+  color: black;
+  background: #7a7a7a;
+}
+#scheduleTable,
+#addTrainForm {
+  max-width: 1100px;
+  padding: 12px;
+}
+input {
+  width: 50%;
+}
+.form-group {
+  color: white;
+  background: #32383e;
+  padding: 0 0 12px 0;
+}
+#searchInput {
+  margin: 0 0 0 12px;
+}
+p {
+  padding: 12px 12px 0 12px;
+  margin: 0 0 2px 0 !important;
+}
+.table {
+  background: #32383e !important;
+  color: white;
+}
+button {
+  margin: 0 !important;
+}
+#trainBW {
+  width: 400px;
+  position: absolute;
+  right: 130px;
+  bottom: -270px;
+}

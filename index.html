@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/reset.css"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+  <title>Firebase Train Scheduler</title>
+</head>
+
+<body>
+
+  <div class="container-fluid" id="heading">
+  <h1 id="header">Train Schedule</h1>
+  <h2 id="subhead">All Aboard!</h2>
+  </div>
+
+  <div class="container-fluid" id="scheduleTable">
+    <table class="table">
+        <thead><h3>Current Train Schedule</h3>
+          <tr>
+            <th scope="col">Train Name</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Frequency (minutes)</th>
+            <th scope="col">Next Arrival</th>
+            <th scope="col">Minutes Away</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="trainName">Darjeeling Express</th>
+            <td class="destination">New Jalpaiguri</td>
+            <td class="frequency">3600</td>
+            <td class="nextArrival">22:05</td>
+            <td class="minutesAway"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="trainName">The Blue Train</th>
+            <td class="destination">Cape Town</td>
+            <td class="frequency">1800</td>
+            <td class="nextArrival">12:30</td>
+            <td class="minutesAway"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="trainName">The Settle-Carlisle</th>
+            <td class="destination">Carlisle</td>
+            <td class="frequency">240</td>
+            <td class="nextArrival">20:45</td>
+            <td class="minutesAway"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="trainName">Venice-Simplon Orient-Express</th>
+            <td class="destination">Budapest</td>
+            <td class="frequency">2400</td>
+            <td class="nextArrival">11:45</td>
+            <td class="minutesAway"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="trainName">The Rocky Mountaineer</th>
+            <td class="destination">Vancouver</td>
+            <td class="frequency">4800</td>
+            <td class="nextArrival">18:10</td>
+            <td class="minutesAway"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container-fluid" id="addTrainForm"><h3>Add Train</h3>
+        <div class="form-group">
+        <p>Train Name</p><input class="trainName" id="searchInput"></input>
+        <p>Destination</p><input class="destination" id="searchInput"></input>
+        <p>First Train Time (HH:mm - military time)</p><input class="firstTrainTime" id="searchInput"></input>
+        <p>Frequency (minutes)</p><input class="frequency" id="searchInput"></input>
+        <p><button class="submit" id="searchInput">Submit</button></p>
+        <img src="assets/images/train.jpeg" class="image" id="trainBW"/>
+    </div>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="assets/javascript/app.js"> </script>
+
+ 
+</body>
+</html>
+   
