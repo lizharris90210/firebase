@@ -13,9 +13,9 @@
 <body>
 
     <div class="container-fluid" id="heading">
-    <div class="timeDate">10:33 AM, Tuesday, March 8, 2019</div>    
+    <div class="timeDate"></div>    
     <h1 id="header">Train Schedule</h1>
-    <!-- <img src="assets/images/train3.jpeg" class="image" id="rightImage"/> -->
+    <img src="assets/images/train3.jpeg" class="image" id="rightImage"/>
 
   <h2 id="subhead">All Aboard!</h2>
   </div>
@@ -33,38 +33,38 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row" class="trainName">Darjeeling Express</th>
+            <th scope="row" class="trainName" id="darjeeling">Darjeeling Express</th>
             <td class="destination">New Jalpaiguri</td>
             <td class="frequency">3600</td>
-            <td class="nextArrival">10:05 PM</td>
+            <td class="nextArrival">10:05</td>
             <td class="minutesAway"></td>
           </tr>
           <tr>
-            <th scope="row" class="trainName">The Blue Train</th>
+            <th scope="row" class="trainName" id="blue">The Blue Train</th>
             <td class="destination">Cape Town</td>
             <td class="frequency">1800</td>
-            <td class="nextArrival">12:30 PM</td>
+            <td class="nextArrival">12:30</td>
             <td class="minutesAway"></td>
           </tr>
           <tr>
-            <th scope="row" class="trainName">The Settle-Carlisle</th>
+            <th scope="row" class="trainName" id="settle">The Settle-Carlisle</th>
             <td class="destination">Carlisle</td>
             <td class="frequency">240</td>
-            <td class="nextArrival">8:45 AM</td>
+            <td class="nextArrival">18:45</td>
             <td class="minutesAway"></td>
           </tr>
           <tr>
-            <th scope="row" class="trainName">Venice-Simplon Orient-Express</th>
+            <th scope="row" class="trainName" id="venice">Venice-Simplon Orient-Express</th>
             <td class="destination">Budapest</td>
             <td class="frequency">2400</td>
-            <td class="nextArrival">11:45 AM</td>
+            <td class="nextArrival">11:45</td>
             <td class="minutesAway"></td>
           </tr>
           <tr>
-            <th scope="row" class="trainName">The Rocky Mountaineer</th>
+            <th scope="row" class="trainName" id="rocky">The Rocky Mountaineer</th>
             <td class="destination">Vancouver</td>
             <td class="frequency">4800</td>
-            <td class="nextArrival">6:10 PM</td>
+            <td class="nextArrival">06:10</td>
             <td class="minutesAway"></td>
           </tr>
         </tbody>
@@ -73,18 +73,21 @@
 
     <div class="container-fluid" id="addTrainForm"><h3>Add Train</h3>
         <div class="form-group">
-        <p>Train Name</p><input class="trainName" id="searchInput"></input>
-        <p>Destination</p><input class="destination" id="searchInput"></input>
-        <p>First Train Time (HH:mm - military time)</p><input class="firstTrainTime" id="searchInput"></input>
-        <p>Frequency (minutes)</p><input class="frequency" id="searchInput"></input>
-        <p><button class="submit" id="searchInput">Submit</button></p>
+        <p>Train Name</p><input class="trainName" id="searchTrain"></input>
+        <p>Destination</p><input class="destination" id="searchDestination"></input>
+        <p>First Train Time (HH:mm - military time)</p><input class="firstTrainTime" id="searchTrainTime"></input>
+        <p>Frequency (minutes)</p><input class="frequency" id="searchFrequency"></input>
+        <p><button class="submit" id="submitButton">Submit</button></p>
         <img src="assets/images/train.jpeg" class="image" id="trainBW"/>
     </div>
 </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
   <script src="assets/javascript/app.js"> </script>
-  <script src="moment.js"></script>
-
+  <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+  <script>
+  </script>
  
 </body>
 </html>

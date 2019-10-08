@@ -12,24 +12,27 @@ h3 {
   background: #7a7a7a;
   margin-bottom: 30px;
 }
-h2{
-    text-align: center;
-    color: black;
-    background: #7a7a7a;
-    padding-bottom: 15px;
+h2 {
+  text-align: center;
+  color: black;
+  background: #7a7a7a;
+  padding-bottom: 15px;
 }
 .timeDate {
-  float: left;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 22px;
   text-align: left;
   vertical-align: middle;
   color: black;
-  max-height: 200px;
-  max-width: 200px;
+  height: 150px;
+  width: 200px;
   border: solid black 4px;
   padding: 20px;
 }
 #rightImage {
-  max-height: 200px;
+  max-height: 150px;
   position: absolute;
   right: 0;
   top: 0;
@@ -63,9 +66,6 @@ button {
   margin: 0 !important;
 }
 #trainBW {
-  width: 492px;
-  position: absolute;
-  z-index: 1;
-  right: 97px;
-  bottom: -324px;
+  width: auto;
+  position: relative;
 }
